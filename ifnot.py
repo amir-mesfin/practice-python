@@ -34,6 +34,24 @@
    
    
 command = ""
-while command != "quit" :
-  command = input(">")
-  print("ECHO", command)
+# while command != "quit" :
+#   command = input(">")
+#   print("ECHO", command)
+
+# while True :
+#   command = input(">")
+#   print(" ECHO", command)
+#   if command.lower() == "quit":
+#     break
+
+# for number in range(2,10,2):
+#   print(number)
+# print("we have 4 enven number")
+
+count = 0
+get = int(input("enter the the number " ))
+for number in range(1,get):
+  if number % 2 == 0:
+   count += 1
+   print(number)
+print("even number", count)
