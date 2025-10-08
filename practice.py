@@ -12,3 +12,6 @@ print(random.randrange(1,9))
 
 print(type(str(5)))
 
+
+name = "abushe"
+print(name[-3:-1])
