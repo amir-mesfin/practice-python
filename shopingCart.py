@@ -4,3 +4,5 @@ quality = int(input("how many would you like?"))
 
 totalPrice = price * quality  
 print(f"you hve bought {quality} X {item} \n total price is {totalPrice}$")   
+
+
