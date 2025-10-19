@@ -36,3 +36,4 @@ for food in cart:
   print(food, end = " ")
 
 print(f"\n   Total is : ${total}")
+ 
