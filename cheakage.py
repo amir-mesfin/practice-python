@@ -8,7 +8,7 @@ else:
 print(message)
 
 message = "Eligible" if age >+ 18 else "not Eligible"
-print(message) 
+print(message)
 
 
 first_name = " abushe"
@@ -17,5 +17,5 @@ print(f" name : {first_name}")
 
 price = 45.67
 
-print(f"the price is ${price}"   
+print(f"the price is ${price}"
       )

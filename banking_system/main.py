@@ -4,8 +4,8 @@ def show_balance(balance):
     print("____________________________________________")
     print("____________________________________________")
     print(f"  Your balance is ${balance:.2f}")
-    print("____________________________________________")
-    
+    print("_______________________vh______________________")
+
 
 
 def deposit(balance):
@@ -21,7 +21,7 @@ def deposit(balance):
         print(f"  You successfully deposit ${amount:.2f}")
         print(f"  Your current balance is ${balance + amount: .2f}")
         print("____________________________________________")
-        
+
         return amount
 
 
@@ -36,15 +36,15 @@ def withdraw(balance):
         print("____________________________________________")
         print(f"  Your balance is insufficient to withdraw ${amount}")
         print("____________________________________________")
-        
+
         return 0
     else:
         print("____________________________________________")
-       
+
         print(f"  you successfully withdraw ${amount:.2f}")
         print(f"  Your current Balance is ${balance - amount: .2f}")
         print("____________________________________________")
-        
+
         return amount
 
 
@@ -57,7 +57,7 @@ def main():
         print("********************************************")
         print("              Banking program")
         print("____________________________________________")
-        
+
         print("1, Show Banking")
         print("2, Deposit")
         print("3, Withdraw")
@@ -65,9 +65,9 @@ def main():
         print("********************************************")
 
         choice = int(input("Enter Your choice (1-4)  "))
-        
-        print("____________________________________________")
-        
+
+        print("_____________________________________________")
+
 
         match choice:
             case 1 | "1":
@@ -80,11 +80,11 @@ def main():
                 is_running = False
             case _:
                 print("____________________________________________")
-                
+
                 print(f"  {choice} is wrong choice")
                 print("  please select between  (1-4)")
                 print("________________________________________")
-    print("&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&")
+    print("&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&")
     print("thank to you use our bank system")
     print("have a nice day")
     print("&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&")
@@ -92,4 +92,3 @@ def main():
 
 if __name__ == "__main__":
   main()
- 

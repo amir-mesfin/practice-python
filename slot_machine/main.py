@@ -11,7 +11,7 @@ def spin_row():
 def print_row(row):
     print("*****************\n")
     print("  |  ".join(row),"\n")
-    print("*****************")
+    print("******************")
 
 
 def get_payment(row, bet):
