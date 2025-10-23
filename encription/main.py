@@ -23,3 +23,17 @@ for letter in plain_text:
 
 print(f"cipher text : {cipher_text}")
 print(f"orginal text : {plain_text}")
+
+
+# decription_text = ""
+encription = input("enter your message to decript: ")
+
+decription_text = ""
+
+for letter in encription:
+    index = key.index(letter)
+    decription_text += char_list[index]
+
+
+print(f"cipher text : {cipher_text}")
+print(f"orginal text : {decription_text}")
