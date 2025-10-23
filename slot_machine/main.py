@@ -1,7 +1,5 @@
 # python slot machine
 import random
-
-
 def spin_row():
     symbols = ['⭐', '🍉', '🔔', '🍎', '🍋']
 
