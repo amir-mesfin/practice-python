@@ -35,17 +35,31 @@ hangman_key = { 0: ("   ",
 
 
 def display_man(wrong_guesses):
-    pass
+    print("*** Hangman *****")
+    for line in hangman_key[wrong_guesses]:
+        print(line)
+    print("******************")
 
 def display_hint(hint):
-    pass
+    print("Hint: ", " ".join(hint))
 
 def display_ansewer(ansewer):
-    pass
+    print("The answer is: ", ansewer)
 
 
 def main():
-    pass
+    ansewer = random.choice(word)
+    # print(ansewer)
+    hint = ["_"] * len(ansewer)
+    # print(hint)
+    wrong_guesses = 0
+    guessed_letters = set()
+    is_running = True
 
+    while is_running:
+        display_man(wrong_guesses)
+        display_hint(hint)
+        dispaly_ansewer(ansewer)
+        guess = input("Guess a letter: ").lower()
 if __name__ == "__main__":
     main()
