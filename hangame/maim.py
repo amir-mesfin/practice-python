@@ -67,32 +67,32 @@ def main():
         if not guess.isalpha():
             print("INVALID INPUT")
             continue
-        
+
         if guess in  guessed_letters:
             print(f"{guess} is already guessed")
             continue
-        
+
         guessed_letters.add(guess)
-        
+
         if guess in answer:
             for i in range(len(answer)):
                 if answer[i].lower() == guess:
                     hint[i] = guess
         else :
              wrong_guesses += 1
-            
+
         if "_" not in hint:
             display_man(wrong_guesses)
             display_answer(answer)
             print("YPU WIN THE GAME")
-            
+
             is_running = False
-            
+
         elif wrong_guesses >= len(hangman_key) - 1 :
             display_man(wrong_guesses)
             display_answer(answer)
-            print("YOU LOSE ")  
+            print("YOU LOSE ")
             is_running = False
-            
+
 if __name__ == "__main__":
     main()

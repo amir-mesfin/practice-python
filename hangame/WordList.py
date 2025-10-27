@@ -1,3 +1,23 @@
-
-word = ("apple", "banana", "orange", "grape", "mango",
-        "peach", "cherry", "strawberry", "watermelon")
+word = (
+    "apple", "banana", "orange", "grape", "mango", "peach", "cherry", "strawberry",
+    "watermelon", "pineapple", "kiwi", "papaya", "blueberry", "raspberry", "blackberry",
+    "pear", "plum", "apricot", "fig", "coconut", "pomegranate", "guava", "lime",
+    "lemon", "tangerine", "dragonfruit", "passionfruit", "lychee", "cranberry",
+    "carrot", "potato", "onion", "tomato", "cucumber", "broccoli", "cauliflower",
+    "spinach", "lettuce", "pepper", "garlic", "ginger", "zucchini", "pumpkin",
+    "eggplant", "radish", "celery", "peas", "corn", "beetroot",
+    "tiger", "lion", "elephant", "giraffe", "zebra", "monkey", "rabbit", "fox",
+    "wolf", "bear", "kangaroo", "panda", "dolphin", "shark", "whale", "snake",
+    "eagle", "parrot", "penguin", "frog", "cheetah", "camel", "cow", "goat",
+    "sheep", "hippopotamus", "rhinoceros", "crocodile", "bat", "owl", "horse",
+    "ethiopia", "kenya", "nigeria", "egypt", "brazil", "canada", "india", "japan",
+    "china", "germany", "france", "italy", "spain", "mexico", "australia",
+    "argentina", "russia", "sweden", "norway", "usa", "england", "finland",
+    "turkey", "southafrica", "morocco", "sudan", "uganda", "tanzania",
+    "python", "javascript", "react", "flutter", "html", "css", "algorithm",
+    "database", "variable", "function", "object", "class", "inheritance",
+    "loop", "compiler", "debugger", "array", "string", "boolean", "integer",
+    "framework", "software", "hardware", "network", "encryption", "binary",
+    "interface", "developer", "frontend", "backend", "machinelearning",
+    "artificialintelligence", "datastructure", "server", "client", "protocol"
+)
