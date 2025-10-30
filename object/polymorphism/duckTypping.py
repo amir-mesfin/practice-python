@@ -15,7 +15,7 @@ class cat(animal):
 
 
 class car:
-    alive = True
+    alive = False
 
     def speak(self):
         print("HONK")
