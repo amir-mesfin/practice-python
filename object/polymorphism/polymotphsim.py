@@ -1,3 +1,6 @@
+# polymorphsim    1 inheritance
+                # 2 duck typing
+
 from abc import ABC, abstractmethod
 
 
