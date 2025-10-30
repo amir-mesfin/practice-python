@@ -8,7 +8,7 @@ class Animal:
 
     def sleep(self):
         print(f"{self.name} is sleeping.")
-
+  
 
 # 🐕 Level 2: Dog class inherits from Animal
 class Dog(Animal):
