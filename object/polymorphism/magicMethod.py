@@ -1,5 +1,12 @@
 # Magic method or dunder method (double underscore)
-
+# Method	Used For	Example
+# __init__	Initialize objects	Create new instance
+# __str__ / __repr__	Better printing	Debug or display
+# __add__, __sub__	Custom arithmetic	Vector math
+# __len__, __getitem__	Collection-like objects	Custom lists
+# __call__	Make object callable	Function-like classes
+# __eq__, __lt__	Comparisons	Compare scores, prices
+# @property	Controlled attribute access	Validating data
 
 class book:
 
