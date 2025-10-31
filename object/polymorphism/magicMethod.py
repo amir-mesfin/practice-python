@@ -17,15 +17,34 @@ class book:
     def __gt__(self, other):
         return self.num_page > other.num_page
 
+    def __lt__(self, other):
+        return self.num_page > other.num_page
+
     def __add__(self, other):
         return self.num_page + other.num_page
 
+    def __contains__(self, keyword):
+        return keyword in self.title or keyword in self.author
 
-book1 = book("abushe", "jjr", 456)
-book2 = book("abushe23", "jjr34", 43456)
-book3 = book("abushe67", "jjr456", 453466)
+    def __getitem__(self, key):
+        if (key == "title"):
+            return self.title
+        elif (key == "author"):
+            return self.author
+        elif (key == "page"):
+            return self.num_page
+        else:
+            return "you inter in correct thing"
+
+
+book1 = book("abushe lion of the book in the usa", "jjr", 456)
+book2 = book("abushe23 tiger in te jungle", "jjr34", 43456)
+book3 = book("abushe67 hen in the home ", "jjr456", 453466)
 
 print(book3)
 print(book1 == book2)
 print(book3 < book2)
 print(book1 + book3)
+print("abushe" in book1)
+
+print(book3['page'])
