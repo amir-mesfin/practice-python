@@ -1,0 +1,11 @@
+import json
+
+employ = {
+    "name": "John Doe",
+    "age": 30,
+    "city": "New York",
+    "skills": ["Python", "JavaScript", "SQL"]
+     "projects": {
+        "project1": "Web Development",}
+}
+

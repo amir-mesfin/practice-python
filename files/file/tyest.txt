@@ -1,1 +1,0 @@
-Would you like me to give you practice exercises (easy → medium → hard) to help you master decorators step-by-step?
