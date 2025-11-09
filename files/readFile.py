@@ -49,6 +49,7 @@ def  read_csv_file():
             print("📄 CSV File Content:\n")
             for row in reader:
                 print(', '.join(row))
+                # print(row[0])
     except Exception as e:
         print(f"❌ An error occurred while reading the CSV file: {e}")
 
