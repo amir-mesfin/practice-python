@@ -12,7 +12,7 @@ now = now.strftime("%H:%M:%S   %m-%d-%y")
 # print(now)
 
 
-targrt_date = datetime.datetime(2030,1,1,12,6,9)
+targrt_date = datetime.datetime(2020,1,1,12,6,9)
 
 current_date = datetime.datetime.now()
 
