@@ -1,25 +1,31 @@
-import requists
+import requests
 
-base_url ="https://pokeapi.co/api/v2/"
+base_url = "https://pokeapi.co/api/v2/"
+
 
 def get_pokemon(pokemon_name):
-  url = f"{base_url}pokemon/{pokemon_name}"
-  response = requists.get(url)
-  #print(response.json())
-  if(response.status_code == 200):
-    #    print("data is retrived successfully")
-         pokeman_data = response.json()
-         print(pokeman_data)
-  else:
-      print(f"Pokemon not found {response.status_code}")
-pokeman_name = input("Enter the name of the Pokemon: ").lower()
+    url = f"{base_url}pokemon/{pokemon_name}"
+    response = requests.get(url)
 
-pokeman_info = get_pokemon(pokeman_name)
+    if response.status_code == 200:
+        pokemon_data = response.json()
+        return pokemon_data   # <-- IMPORTANT: return the data
+    else:
+        print(f"Pokemon not found! Status: {response.status_code}")
+        return None
 
-if pokeman_info:
-    print(f"Name: {pokeman_info['name'].capitalize()}")
-    print(f"Height: {pokeman_info['height']}")
-    print(f"Weight: {pokeman_info['weight']}")
+
+pokemon_name = input("Enter the name of the Pokemon: ").lower()
+
+pokemon_info = get_pokemon(pokemon_name)
+
+if pokemon_info:
+    print(f"Name: {pokemon_info['name'].capitalize()}")
+    print(f"Height: {pokemon_info['height']}")
+    print(f"Weight: {pokemon_info['weight']}")
     print("Abilities:")
-    for ability in pokeman_info['abilities']:
+    for ability in pokemon_info['abilities']:
         print(f"- {ability['ability']['name']}")
+        
+else:
+    print("No information available.")
