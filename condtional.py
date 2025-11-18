@@ -34,9 +34,8 @@ elif operator == "*":
     print(f"the result {num1} {operator} {num2} = {result}")
     
 else :
-    print(f"{operator} is not valid")  
+    print(f"{operator} is not  uu valid")  
     
   
 
 
-s
