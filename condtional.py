@@ -19,7 +19,7 @@ if operator == "-":
     
 elif operator == "/":
     result = round(num1 / num2)
-    print(f"the result {num1} {operator} {num2} = {result}")
+    print(f"the result  of {num1} {operator} {num2} = {result}")
     
 elif operator == "+":
     result = num1 + num2
