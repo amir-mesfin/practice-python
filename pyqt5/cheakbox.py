@@ -4,7 +4,7 @@ from PyQt5.QtWidgets import QApplication, QMainWindow, QCheckBox
 class MainWindow(QMainWindow):
     def __init__(self):
         super().__init__()
-        self.setWindowTitle("Checkbox Example")
+        self.setWindowTitle("Checkbox Exampleof this ")
         self.setGeometry(100, 100, 300, 200)
 
         # Create a checkbox
