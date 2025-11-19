@@ -5,7 +5,7 @@ class MainWindow(QMainWindow):
     def __init__(self):
         super().__init__()
         self.setWindowTitle("Checkbox Exampleof this ")
-        self.setGeometry(100, 100, 300, 200)
+        self.setGeometry(500, 400, 500, 500)
 
         # Create a checkbox
         self.checkbox = QCheckBox("Check me!", self)
